@@ -13,12 +13,13 @@ Console.Write($"Из имеющегося массива строк сформи
 string[] array1 = new string[4] { "1234", "1567", "-2", "computer science" };
 //string[] array1 = new string[3] { "Russia", "Denmark", "Kazan" };
 string str = string.Join(" ", array1);
+int size=array1.Length;
 Console.Write($"Исходные данные \t");
 Console.WriteLine(str);
 Console.Write($"Результат \t");
-string[] array2 = new string[array1.Length];
+string[] array2 = new string[size];
 int count = 0;
-for (int i = 0; i < array1.Length; i++)
+for (int i = 0; i < size; i++)
 {
     if (array1[i].Length <= 3)
     {
